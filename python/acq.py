@@ -7,10 +7,10 @@ import lib.ndt_acquisition as ndt
 def main():
     probe_state = device.init_device(verbose=True, logging=False)
     
-    gain = 25
+    gain = 350
     pon = 80
     poff = 80
-    damp = 6000
+    damp = 4000
     
     device.dac(probe_state, gain)
     device.pulse_adc_trigger(probe_state, pon=pon, poff=poff, damp=damp)
