@@ -78,10 +78,13 @@ def main():
     
     #ndt.save_acquisition(acq_data, path="calibration-data/acquisitions.h5")
 
+    plt.show() 
+
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
     
     filename = f"plots/plot_{timestamp}.png"
     plt.savefig(filename)
+
 
 if __name__ == "__main__":
     main()
